@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "51536188141",
+    "project_id": "cartzy-app-32e46",
+    "storage_bucket": "cartzy-app-32e46.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51536188141:android:e6a0909a5d2bb2ac6732e4",
+        "android_client_info": {
+          "package_name": "com.deepakjetpackcompose.cartzy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8zKIk0orNX64GXS1BdeNKX-mkKW5OW0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
