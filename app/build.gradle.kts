@@ -64,4 +64,9 @@ dependencies {
     val nav_version = "2.9.0"
 
     implementation("androidx.navigation:navigation-compose:$nav_version")
+
+    //coil
+    implementation("io.coil-kt:coil-compose:2.7.0")
+    //dot library
+    implementation("com.tbuonomo:dotsindicator:5.1.0")
 }

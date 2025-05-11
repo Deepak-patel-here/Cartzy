@@ -38,7 +38,7 @@ fun HomeScreen(navController: NavController,modifier: Modifier = Modifier) {
     var isSelected by remember{ mutableStateOf(0) }
     Scaffold (
         bottomBar = {
-            NavigationBar(containerColor = MaterialTheme.colorScheme.primaryContainer, contentColor = MaterialTheme.colorScheme.onPrimaryContainer) {
+            NavigationBar(containerColor = MaterialTheme.colorScheme.surface) {
                 navList.forEachIndexed { index,navTo->
                     NavigationBarItem(
                         selected = index==isSelected,
@@ -46,12 +46,8 @@ fun HomeScreen(navController: NavController,modifier: Modifier = Modifier) {
                             Icon(
                                 imageVector = navTo.img,
                                 contentDescription = null,
-                                tint = if(isSelected==index) MaterialTheme.colorScheme.surface else MaterialTheme.colorScheme.onPrimaryContainer,
-                                modifier = Modifier.size(
-                                    if(isSelected==index){
-                                        35.dp
-                                    }else 25.dp
-                                )
+                                tint = if(isSelected==index) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSecondaryContainer,
+                                modifier = Modifier.size(25.dp)
                             )
                         },
                         onClick = {
